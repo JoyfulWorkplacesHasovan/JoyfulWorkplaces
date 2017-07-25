@@ -3823,7 +3823,7 @@ $.ajax({
                       <b:widget-setting name='style.linkcolor'>#619e2a</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                      <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='showLocation'>true</b:widget-setting>
@@ -5261,49 +5261,6 @@ $('#top-comment .widget2').eq($('.top-comment-widget-menu ul dl').index(this)).s
 
            
             <b:section class='sidebar section' id='sidebar' preferred='yes'>
-              <b:widget id='PlusFollowers1' locked='false' title='Google+ Followers' type='PlusFollowers'>
-                <b:widget-settings>
-                  <b:widget-setting name='width'>0</b:widget-setting>
-                  <b:widget-setting name='theme'>DARK</b:widget-setting>
-                  <b:widget-setting name='dimensions'>AUTO</b:widget-setting>
-                  <b:widget-setting name='height'>0</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <b:if cond='data:profileUrl != &quot;&quot;'>
-      <div class='g-plus' data-action='followers' data-source='blogger:blog:followers' expr:data-height='data:height' expr:data-href='data:profileUrl' expr:data-theme='data:theme' expr:data-width='data:width'/>
-      <script type='text/javascript'>
-        window.___gcfg = {&#39;lang&#39;: &#39;<data:language/>&#39;};
-      </script>
-    </b:if>
-  </div>
-</b:includable>
-              </b:widget>
-              <b:widget id='Poll1' locked='false' title='How long are your Loga sessions ?' type='Poll'>
-                <b:widget-settings>
-                  <b:widget-setting name='enddate'>31/07/17</b:widget-setting>
-                  <b:widget-setting name='answer-0'>15-30 mins.</b:widget-setting>
-                  <b:widget-setting name='endtime'>19:37</b:widget-setting>
-                  <b:widget-setting name='answer-2'>60-90 mins.</b:widget-setting>
-                  <b:widget-setting name='allowmultiple'>true</b:widget-setting>
-                  <b:widget-setting name='answer-1'>30-60 mins.</b:widget-setting>
-                  <b:widget-setting name='answer-3'>90+ mins.</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-
- <div class='widget-content'>
-   <iframe allowtransparency='true' expr:height='data:iframeheight' expr:name='&quot;poll-widget&quot; + data:pollid' frameborder='0' style='border:none; width:100%;'/>
-   <b:include name='quickedit'/>
-  </div>
-</b:includable>
-              </b:widget>
               <b:widget id='HTML4' locked='false' title='Sign Up in Seconds' type='HTML'>
                 <b:widget-settings>
                   <b:widget-setting name='content'>&lt;link href=&#39;http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;/&gt;
@@ -5394,9 +5351,31 @@ width: 160px;
   <b:include name='quickedit'/>
 </b:includable>
               </b:widget>
+              <b:widget id='Poll1' locked='false' title='How long are your yoga sessions ?' type='Poll'>
+                <b:widget-settings>
+                  <b:widget-setting name='enddate'>31/07/17</b:widget-setting>
+                  <b:widget-setting name='answer-0'>15-30 mins.</b:widget-setting>
+                  <b:widget-setting name='endtime'>19:37</b:widget-setting>
+                  <b:widget-setting name='answer-2'>60-90 mins.</b:widget-setting>
+                  <b:widget-setting name='allowmultiple'>true</b:widget-setting>
+                  <b:widget-setting name='answer-1'>30-60 mins.</b:widget-setting>
+                  <b:widget-setting name='answer-3'>90+ mins.</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+
+ <div class='widget-content'>
+   <iframe allowtransparency='true' expr:height='data:iframeheight' expr:name='&quot;poll-widget&quot; + data:pollid' frameborder='0' style='border:none; width:100%;'/>
+   <b:include name='quickedit'/>
+  </div>
+</b:includable>
+              </b:widget>
               <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
+                  <b:widget-setting name='numItemsToShow'>2</b:widget-setting>
                   <b:widget-setting name='showThumbnails'>true</b:widget-setting>
                   <b:widget-setting name='showSnippets'>false</b:widget-setting>
                   <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
